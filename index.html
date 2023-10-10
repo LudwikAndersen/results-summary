@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"  rel="stylesheet">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color: rgb(249, 249, 249);
+      font-family: 'Hanken Grotesk', sans-serif;
+    }
+
+    #container {
+      height: 400px;
+      width: 600px;
+      background-color: white;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 170px;
+      border-radius: 25px;
+      -webkit-box-shadow: 7px 9px 27px -16px rgba(107, 116, 194, 1);
+      -moz-box-shadow: 7px 9px 27px -16px rgba(107, 116, 194, 1);
+      box-shadow: 7px 9px 27px -16px rgba(107, 116, 194, 1);
+    }
+
+    #result {
+      height: 400px;
+      width: 300px;
+      float: left;
+      text-align: center;
+      background-image: linear-gradient(0deg, hsl(241, 81%, 54%), hsla(249, 100%, 50%, 0.708) );
+      border-radius: 25px;
+    }
+
+    #summary {
+      height: 400px;
+      width: 250px;
+      float: left;
+      margin-left: 25px;
+    }
+
+    #reaction {
+      width: 250px;
+      height: 50px;
+      background-color: rgb(254, 242, 242);
+      line-height: 50px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    #memory {
+      width: 250px;
+      height: 50px;
+      background-color: hsl(38, 100%, 98%);
+      line-height: 50px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    #verbal {
+      width: 250px;
+      height: 50px;
+      background-color: hsl(165, 100%, 97%);
+      line-height: 50px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    #visual {
+      width: 250px;
+      height: 50px;
+      background-color: hsl(235, 100%, 98%);
+      line-height: 50px;
+      border-radius: 10px;
+    }
+
+    b {
+      margin: 5px;
+    }
+
+    img {
+      margin-bottom: -4px;
+      margin-right: 3px;
+      scale:80%;
+      margin-left: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: rgb(205, 204, 204);
+    }
+
+    #a76 {
+      border-radius: 70%;
+      background-image: linear-gradient(0deg, hsl(241, 81%, 54%), hsla(256, 72%, 46%, 1));
+      width: 150px;
+      height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #p2 {
+      font-size: 60px;
+      margin:0;
+      padding-top: 30px;
+      color: white;
+    }
+
+    #continue {
+      width:250px;
+      height: 40px;
+      background-color: hsl(224, 30%, 27%);
+      text-align: center;
+      border-radius: 100px;
+    }
+
+    #continue:hover {
+      background-image: linear-gradient(0deg, hsl(241, 81%, 54%), hsla(249, 100%, 50%, 0.708) );
+      cursor: pointer;
+    }
+
+    #sumh3 {
+      font-size: 18px;
+      color: rgb(60, 59, 59);
+    }
+
+    h2 {
+      color: white;
+    }
+
+    h3 {
+      color: rgb(205, 204, 204);
+      margin-bottom: 25px;
+      padding-top: 10px;
+    }
+
+    h4 {
+      padding-top: 10px;
+      color: white;
+    }
+
+    #red {
+      color: hsl(0, 100%, 67%);
+    }
+
+    #orange {
+      color: hsl(39, 100%, 56%);
+    }
+
+    #green {
+      color: hsl(166, 100%, 37%);
+    }
+
+    #blue {
+      color: hsl(234, 85%, 45%)
+    }
+
+    abbr {
+      color: rgb(161, 160, 160);
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="result">
+      <h3>Your Result</h3>
+      <div id="a76"><p id="p2">76</p><abbr>
+      of 100</abbr></div>
+
+      <h2>Great</h2>
+      <p>You scored higher than 65% of<br> the people who have taken<br> these tests.</p>
+    </div>
+    <div id="summary">
+      <h3 id="sumh3">Summary</h3>
+
+      <div id="reaction"><img src="assets/images/icon-reaction.svg"><b id="red">Reaction</b>
+        <div style="float:right"><b>80</b><abbr> / 100</abbr></div>
+      </div>
+
+      <div id="memory"><img src="assets/images/icon-memory.svg"><b id="orange">Memory</b>
+        <div style="float:right"><b>92</b><abbr> / 100</abbr></div>
+      </div>
+
+      <div id="verbal"><img src="assets/images/icon-verbal.svg"><b id="green">Verbal</b>
+        <div style="float:right"><b>61</b><abbr> / 100</abbr></div>
+      </div>
+
+      <div id="visual"><img src="assets/images/icon-visual.svg"><b id="blue">Visual</b>
+        <div style="float:right"><b>72</b><abbr> / 100</abbr></div>
+      </div>
+
+      <div id="continue"><h4>Continue</h4></div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">LudwikAndersen</a>.
+  </div>
+</body>
+</html>
